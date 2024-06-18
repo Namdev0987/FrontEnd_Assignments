@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Stardos+Stencil:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playwrite+FR+Moderne:wght@100..400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  height: 110vh;
+  padding: 1%;
+  background-image: url(./images/Screenshot\ 2024-06-13\ 191959.png);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.main h1 {
+  margin-bottom: 1%;
+  padding: 1%;
+  font-size: 64px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;;
+  color: white;
+  
+}
+.main h4{
+  padding-left: 15%;
+  font-size: 20px;
+  font-family: "Fjalla One", sans-serif;
+  
+}
+.container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  
+}
+h2 {
+  width: 100%;
+  padding: 5%;
+  font-size: 42px;
+  text-decoration: underline;
+  font-family: "Stardos Stencil", system-ui;
+}
+.left {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.right {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+ul {
+  width: 70%;
+}
+ul li {
+  padding: 5%;
+}
+ul li a {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-family: "Stardos Stencil", system-ui;
+
+}
+ul li a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .main {
+    height: auto;
+    padding-inline: 2%;
+    padding-block: 6%;
+  }
+  .main h1 {
+    font-size: 56px;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 38px;
+  }
+  .container .left {
+    width: 100%;
+    padding-block: 5%;
+    align-items: center;
+  }
+  .container .right {
+    width: 100%;
+    align-items: center;
+    padding-block: 5%;
+  }
+  .container ul {
+    width: 50%;
+  }
+}
